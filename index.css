@@ -16,8 +16,8 @@ body {
 
 .whole {
     margin: 30px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.825);
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     display: flex;
@@ -28,7 +28,7 @@ body {
 
 nav {
     position: relative;
-    top: 1rem;
+    top: 0.6rem;
     display: inline-block;
     margin-left: 20%;
 }

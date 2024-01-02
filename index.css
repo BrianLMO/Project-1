@@ -34,7 +34,7 @@ label #open,
 label #cancel {
     display: none;
     color: white;
-    font-size: 30px;
+    font-size: 23px;
     cursor: pointer;
     margin-right: 20px; /* Adjust margin as needed */
 }
@@ -85,6 +85,26 @@ label #cancel {
 
     #check:checked ~ label #cancel {
         display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    #title{
+        font-size: 5px;
+    }
+    .whole img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    #title{
+        font-size: 10px;
+    }
+    .whole img{
+        width: 30px;
+        height: 30px;
     }
 }
 

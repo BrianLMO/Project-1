@@ -18,7 +18,7 @@ body {
     margin: 30px;
     padding: 2px;
     background-color: rgba(0, 0, 0, 0.788);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     border-radius: 30px;
     display: flex;
     position: sticky;
@@ -194,14 +194,32 @@ nav a:hover {
 /*Second Page*/
 
 .Box1{
+    width: 40%;
     background-color: black;margin: 30px;
     padding: 2px;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    display: flex;
 }
 
+.Box1 img#text1{
+    width: 60%;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+h1.text1{
+    color: white;
+    margin: 20px;
+    font-family: 'Poppins', serif;
+}
+
+p.text1{
+    font-family: 'Poppins', serif;
+    color:rgb(213, 213, 213);
+    margin: 20px;
+
+}
 .Box2{
     background-color: black;margin: 30px;
     padding: 2px;
@@ -209,10 +227,6 @@ nav a:hover {
     backdrop-filter: blur(10px);
     border-radius: 30px;
     display: flex;
-}
-
-.Box1 img #text1{
-    width: 30%;
 }
 
 .Box3{

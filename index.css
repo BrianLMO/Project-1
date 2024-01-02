@@ -5,7 +5,7 @@ body {
 #title {
     color: rgb(255, 255, 255);
     font-family: 'Diphylleia', serif;
-    font-size: 15px;
+    font-size: 20px;
     position: relative;
     margin-right: 20px; /* Adjust the margin as needed */
 }
@@ -44,6 +44,14 @@ label #cancel {
         left: 6%;
         top: 20px;
         width: 130px;
+    }
+
+    #title{
+        font-size: 15px;
+    }
+    .whole img{
+        width: 30px;
+        height: 30px;
     }
     
     label #open{
@@ -88,24 +96,59 @@ label #cancel {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     #title{
-        font-size: 5px;
+        font-size: 6px;
+        position: relative;
+        left: -1rem;
     }
     .whole img{
         width: 20px;
         height: 20px;
+        position: relative;
+        left: -1rem;
     }
+    label #open,
+    label #cancel {
+    font-size: 14px;
+}
+nav ul {
+    position: fixed;
+    width: 95%;
+    height: 340%;
+    background-color: rgba(0, 0, 0, 0.788);
+    backdrop-filter: blur(10px);
+    top: 20px;
+    left: -200%;
+    display: flex;
+    flex-direction: column; /* Display as a column */
+    align-items: center; /* Center items vertically */
+    text-align: center;
+    transition: all .5s;
 }
 
-@media (max-width: 700px) {
-    #title{
-        font-size: 10px;
-    }
-    .whole img{
-        width: 30px;
-        height: 30px;
-    }
+nav ul li a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+
+#check:checked ~ ul {
+    left: 0;
+    border-radius: 20px;
+}
+
+#check:checked ~ label #open {
+    display: none;
+}
+
+#check:checked ~ label #cancel {
+    display: block;
+}
 }
 
 nav {
@@ -147,3 +190,37 @@ nav a:hover {
 #RisingDesk{
     width: 50%;
 }
+
+/*Second Page*/
+
+.Box1{
+    background-color: black;margin: 30px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.788);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+}
+
+.Box2{
+    background-color: black;margin: 30px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.788);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+}
+
+.Box1 img #text1{
+    width: 30%;
+}
+
+.Box3{
+    background-color: black;margin: 30px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.788);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+}
+

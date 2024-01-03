@@ -97,6 +97,10 @@ label #cancel {
 }
 
 @media (max-width: 580px) {
+    .whole{
+        margin: 10px;
+    }
+
     #title{
         font-size: 8px;
         position: relative;
@@ -110,7 +114,7 @@ label #cancel {
     }
     label #open,
     label #cancel {
-    font-size: 17px;
+    font-size: 18px;
 }
 nav ul {
     position: fixed;

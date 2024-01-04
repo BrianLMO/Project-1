@@ -327,11 +327,11 @@ p.text3{
     }
     
     h1.text1{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     p.text1{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .Box2 img#text2{
@@ -340,11 +340,11 @@ p.text3{
     }
     
     h1.text2{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     p.text2{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .Box3 img#text3{
@@ -353,10 +353,10 @@ p.text3{
     }
     
     h1.text3{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     p.text3{
-        font-size: 30px;
+        font-size: 20px;
     }
 } 

@@ -251,7 +251,7 @@ p.text1{
 }
 @media (max-width: 580px){
     nav ul{
-        top: 30px;
+        top: 50px;
     }
 
     .Box1 img#text1{

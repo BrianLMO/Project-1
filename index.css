@@ -99,22 +99,24 @@ label #cancel {
 @media (max-width: 580px) {
     .whole{
         margin: 10px;
+
     }
 
     #title{
-        font-size: 8px;
+        font-size: 16px;
         position: relative;
+        bottom: 5px;
         left: -1rem;
     }
     .whole img{
-        width: 22px;
-        height: 22px;
+        width: 32px;
+        height: 32px;
         position: relative;
         left: -1rem;
     }
     label #open,
     label #cancel {
-    font-size: 18px;
+    font-size: 20px;
 }
 nav ul {
     position: fixed;
@@ -198,7 +200,9 @@ nav a:hover {
 /*Second Page*/
 
 .Box1{
-    width: 40%;
+    width: 30%;
+    display: inline-block;
+    padding: 20px;
     background-color: black;
     margin: 30px;
     background-color: rgba(0, 0, 0, 0.788);
@@ -207,14 +211,16 @@ nav a:hover {
 }
 
 .Box1 img#text1{
-    width: 60%;
+    width: 80%;
     margin: 20px;
     border-radius: 20px;
 }
 
 h1.text1{
     color: white;
+    font-size: 30px;
     margin: 20px;
+    width: 100%;
     font-family: 'Poppins', serif;
 }
 
@@ -222,16 +228,39 @@ p.text1{
     font-family: 'Poppins', serif;
     color:rgb(213, 213, 213);
     margin: 20px;
+    width: 90%;
+}
 
+@media (max-width: 944px){
+    .Box1{
+        width: 80%;
+    }
+
+    .Box1 img#text1{
+        margin: 10px;
+        width: 30%;
+    }
+    
+    h1.text1{
+        width: 100%;
+    }
+    
+    p.text1{
+        width: 90%;
+    }
 }
 
 .Box2{
-    background-color: black;margin: 30px;
-    padding: 2px;
+    display: inline-block;
+    position: relative;
+    bottom: 10rem;
+    width: 30%;
+    padding: 20px;
+    background-color: black;
+    margin: 30px;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    display: inline-block;
 }
 
 .Box2 img#text2{

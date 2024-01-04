@@ -322,38 +322,41 @@ p.text3{
     }
 
     .Box1 img#text1{
-        width: 50%;
+        width: 60%;
+        margin: 0px;
     }
     
     h1.text1{
-        font-size: 20px;
+        font-size: 40px;
     }
     
     p.text1{
-        font-size: 10px;
+        font-size: 30px;
     }
 
     .Box2 img#text2{
-        width: 50%;
+        width: 60%;
+        margin: 0px;
     }
     
     h1.text2{
-        font-size: 20px;
+        font-size: 40px;
     }
     
     p.text2{
-        font-size: 10px;
+        font-size: 30px;
     }
-    
+
     .Box3 img#text3{
         width: 60%;
+        margin: 0px;
     }
     
     h1.text3{
-        font-size: 20px;
+        font-size: 40px;
     }
     
     p.text3{
-        font-size: 10px;
+        font-size: 30px;
     }
 } 

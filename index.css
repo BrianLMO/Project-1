@@ -198,13 +198,18 @@ nav a:hover {
 }
 
 /*Second Page*/
+.SecWhole{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .Box1{
-    width: 30%;
-    display: inline-block;
+    width: 50%;
+    display: flex;
     padding: 20px;
     background-color: black;
-    margin: 3%;
+    margin: 10px;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
@@ -220,7 +225,7 @@ h1.text1{
     color: white;
     font-size: 30px;
     margin: 20px;
-    width: 100%;
+    width: 90%;
     font-family: 'Poppins', serif;
 }
 
@@ -231,7 +236,7 @@ p.text1{
     width: 90%;
 }
 
-@media (max-width: 944px){
+/* @media (max-width: 944px){
     .Box1{
         width: 80%;
     }
@@ -248,7 +253,12 @@ p.text1{
     p.text1{
         width: 90%;
     }
+
+    .Box2{
+        top: 10rem;
+    }
 }
+
 @media (max-width: 580px){
     nav ul{
         top: 50px;
@@ -266,33 +276,71 @@ p.text1{
     p.text1{
         width: 90%;
     }
-}
+} */
 
 .Box2{
-    display: inline-block;
-    position: relative;
-    bottom: 10rem;
-    width: 30%;
+    width: 50%;
+    display: flex;
     padding: 20px;
     background-color: black;
-    margin: 30px;
+    margin: 10px;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
 }
 
 .Box2 img#text2{
-    width: 60%;
+    width: 70%;
     margin: 20px;
     border-radius: 20px;
 }
 
+h1.text2{
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Poppins', serif;
+}
+
+p.text2{
+    font-family: 'Poppins', serif;
+    color:rgb(213, 213, 213);
+    margin: 20px;
+}
+
+.Upper{
+    margin: 0px;
+}
+
 .Box3{
-    background-color: black;margin: 30px;
-    padding: 2px;
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    margin: 10px 50px;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    display: flex;
 }
 
+.Box3 img#text3{
+    width: 80%;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.Innerbox3{
+    width: 90%;
+}
+
+h1.text3{
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Poppins', serif;
+}
+
+p.text3{
+    font-family: 'Poppins', serif;
+    color:rgb(213, 213, 213);
+    margin: 20px;
+}

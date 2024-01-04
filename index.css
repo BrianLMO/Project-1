@@ -103,7 +103,7 @@ label #cancel {
     }
 
     #title{
-        font-size: 16px;
+        font-size: 14px;
         position: relative;
         bottom: 5px;
         left: -1rem;
@@ -116,7 +116,7 @@ label #cancel {
     }
     label #open,
     label #cancel {
-    font-size: 20px;
+    font-size: 24px;
 }
 nav ul {
     position: fixed;

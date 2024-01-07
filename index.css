@@ -382,14 +382,38 @@ p.text3{
 
 h1.text4{
     color: rgb(0, 0, 0);
-    font-size: 45px;
+    font-size: 41px;
     margin: 40px;
     font-family: 'Poppins', serif;
 }
 
 p.text4{
     color: rgb(61, 61, 61);
-    font-size: 25px;
+    font-size: 20px;
     margin: 50px;
     font-family: 'Poppins', serif;
+}
+
+.Gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.imgGrid {
+    display: grid;
+    max-width: 300px;
+    width: 100%;
+}
+
+.grid-item {
+    overflow: hidden;
+}
+
+div.Gallery img {
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    display: block;
 }

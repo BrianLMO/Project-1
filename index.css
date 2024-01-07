@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 251);
+    background-color: rgb(255, 255, 249);
     margin: 0;
 }
 #title {
@@ -15,6 +15,7 @@ body {
 }
 
 .whole {
+    box-shadow: 0px 7px 30px;
     margin: 30px;
     padding: 2px;
     background-color: rgba(0, 0, 0, 0.788);
@@ -23,7 +24,7 @@ body {
     display: flex;
     position: sticky;
     top: 0;
-    z-index: 100
+    z-index: 100;
 }
 
 #check {
@@ -120,11 +121,11 @@ label #cancel {
 }
 nav ul {
     position: fixed;
-    width: 95%;
+    width: 90%;
     height: 740%;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
-    top: 20px;
+    top: 30px;
     left: -200%;
     display: flex;
     flex-direction: column; /* Display as a column */
@@ -205,6 +206,7 @@ nav a:hover {
 }
 
 .Box1{
+    box-shadow: 10px 10px 30px;
     width: 50%;
     display: flex;
     padding: 20px;
@@ -237,6 +239,7 @@ p.text1{
 }
 
 .Box2{
+    box-shadow: 10px 10px 30px;
     width: 50%;
     display: flex;
     padding: 20px;
@@ -271,10 +274,11 @@ p.text2{
 }
 
 .Box3{
+    box-shadow: 10px 10px 30px;
     display: flex;
     padding: 20px;
     background-color: black;
-    margin: 10px 50px;
+    margin: 5px 50px;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
@@ -360,3 +364,32 @@ p.text3{
         font-size: 20px;
     }
 } 
+
+/*ThirdPage*/
+
+.ThirdWhole{
+    margin: 100px 0 0 0;
+    background-image: url(ThirdWhole.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.Box4{
+    margin: 60px;
+    text-align: center;
+}
+
+h1.text4{
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    margin: 40px;
+    font-family: 'Poppins', serif;
+}
+
+p.text4{
+    color: rgb(61, 61, 61);
+    font-size: 25px;
+    margin: 50px;
+    font-family: 'Poppins', serif;
+}

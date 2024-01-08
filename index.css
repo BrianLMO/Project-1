@@ -156,6 +156,10 @@ nav ul li a {
 #check:checked ~ label #cancel {
     display: block;
 }
+
+article img#RisingDesk{
+    width: 90%;
+}
 }
 
 nav {
@@ -195,20 +199,25 @@ nav a:hover {
 }
 
 #RisingDesk{
-    width: 50%;
+    width: 500px;
 }
 
 /*Second Page*/
 .SecWhole{
     margin: 40px;
+    justify-content: center;
+}
+
+.Upper{
+    margin: 0 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .Box1{
-    box-shadow: 10px 10px 30px;
-    width: 50%;
     display: flex;
+    box-shadow: 10px 10px 30px;
+    width: 500px;
     padding: 20px;
     background-color: black;
     margin: 10px;
@@ -218,7 +227,7 @@ nav a:hover {
 }
 
 .Box1 img#text1{
-    width: 80%;
+    width: 70%;
     margin: 20px;
     border-radius: 20px;
 }
@@ -240,7 +249,7 @@ p.text1{
 
 .Box2{
     box-shadow: 10px 10px 30px;
-    width: 50%;
+    width: 500px;
     display: flex;
     padding: 20px;
     background-color: black;
@@ -251,7 +260,7 @@ p.text1{
 }
 
 .Box2 img#text2{
-    width: 70%;
+    width: 60%;
     margin: 20px;
     border-radius: 20px;
 }
@@ -269,29 +278,27 @@ p.text2{
     margin: 20px;
 }
 
-.Upper{
-    margin: 0px;
+.Lower{
+    margin: 0 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .Box3{
+    margin: 10px;
     box-shadow: 10px 10px 30px;
-    display: flex;
+    width: 1060px;
     padding: 20px;
     background-color: black;
-    margin: 5px 50px;
     background-color: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
 }
 
 .Box3 img#text3{
-    width: 80%;
+    width: 400px;
     margin: 20px;
     border-radius: 20px;
-}
-
-.Innerbox3{
-    width: 90%;
 }
 
 h1.text3{
@@ -308,25 +315,35 @@ p.text3{
 }
 
 @media (max-width: 580px){
-    .SecWhole {
-        flex-direction: column; /* Change flex direction to column for smaller screens */
-        align-items: center; /* Center items in the column */
+    .Secondwhole{
+        margin: 0px;
+    }
+    
+    .Upper{
+        display: block;
+        margin: 0 10px;
     }
 
     .Box1,
-    .Box2 {
-        width: 80%;
-        margin: 3%;
+    .Box2{
+        justify-content: center;
+        width: 85%;
+        margin: 10px 0;
     }
+
+    .Lower{
+        display: block;
+        margin: 0 10px;
+    }
+
     .Box3 {
-        width: 70%; 
-        margin: 0 60px;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        width: 85%;
+        margin: 10px 0;
     }
 
     .Box1 img#text1{
-        width: 60%;
+        width: 90%;
         margin: 0px;
     }
     
@@ -339,7 +356,7 @@ p.text3{
     }
 
     .Box2 img#text2{
-        width: 60%;
+        width: 70%;
         margin: 0px;
     }
     
@@ -352,7 +369,7 @@ p.text3{
     }
 
     .Box3 img#text3{
-        width: 60%;
+        width: 100%;
         margin: 0px;
     }
     
@@ -398,16 +415,15 @@ p.text4{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    margin: 0 50px;
+    
 }
 
 .imgGrid {
     display: grid;
     max-width: 300px;
     width: 100%;
-}
-
-.grid-item {
+    margin: 50px 0;
     overflow: hidden;
 }
 
@@ -416,4 +432,14 @@ div.Gallery img {
     width: 90%;
     height: auto;
     display: block;
+}
+
+@media (max-width: 580px){
+    h1.text4{
+        margin:10px;
+        font-size: 35px;
+    }
+    h1.text4 i{
+        font-size: 40px;
+    }
 }

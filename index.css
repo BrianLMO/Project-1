@@ -15,10 +15,10 @@ body {
 }
 
 .whole {
-    box-shadow: 0px 7px 30px;
+    box-shadow: 0px 7px 15px;
     margin: 30px;
     padding: 2px;
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: rgba(0, 0, 0, 0.689);
     backdrop-filter: blur(7px);
     border-radius: 30px;
     display: flex;
@@ -181,7 +181,20 @@ nav a {
     margin-right: 3rem;
 }
 
+nav a#home{
+    color: rgb(22, 22, 22);
+}
+
 nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    text-decoration: underline;
+    color: rgb(56, 56, 56);
+}
+
+nav a:visited {
     text-decoration: underline;
 }
 
@@ -386,7 +399,7 @@ p.text3{
 
 .ThirdWhole{
     margin: 100px 0 0 0;
-    background-image: url(ThirdWhole.jpg);
+    background-image: url(ThirdWhole.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -421,7 +434,7 @@ p.text4{
 
 .imgGrid {
     display: grid;
-    max-width: 300px;
+    max-width: 600px;
     width: 100%;
     margin: 50px 0;
     overflow: hidden;
@@ -453,3 +466,39 @@ div.Gallery img {
         
     }
 }
+
+/*FourthWhole*/
+
+#slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    width: 600px;
+    margin: 30px auto;
+  }
+  
+  .slidegroup {
+    flex-direction: column;
+    align-items: center;
+    width: 2912px;
+    animation: slide 10s ease infinite;
+    
+  }
+  
+  .slide img{
+    float: left;
+    width: 528px;
+    
+  }
+  
+  @keyframes slide {
+    20% {margin-left: 2460px;}
+    40% {margin-left: 1350px;}
+    60% {margin-left: 256px;}
+    80% {margin-left: -784px;}
+    100% {margin-left: -1884px;}
+  }
+

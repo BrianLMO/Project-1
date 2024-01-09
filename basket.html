@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping Basket Example</title>
+</head>
+<body>
+    <div class="item" data-name="Product A" data-price="20">
+        <h3>Product A</h3>
+        <p>$20</p>
+        <button class="add-to-cart" onclick="addToCart('Product A', 20)">Add to Cart</button>
+    </div>
+
+    <div class="item" data-name="Product B" data-price="30">
+        <h3>Product B</h3>
+        <p>$30</p>
+        <button class="add-to-cart" onclick="addToCart('Product B', 30)">Add to Cart</button>
+    </div>
+
+    <div class="basket-icon" onclick="goToBasket()">
+        <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+        <span id="cart-count">0</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

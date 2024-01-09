@@ -1,0 +1,199 @@
+body {
+    background-color: rgb(255, 255, 249);
+    margin: 0;
+}
+#title {
+    color: rgb(255, 255, 255);
+    font-family: 'Diphylleia', serif;
+    font-size: 20px;
+    position: relative;
+    margin-right: 20px;  
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+.whole {
+    box-shadow: 0px 7px 15px;
+    margin: 30px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.689);
+    backdrop-filter: blur(7px);
+    border-radius: 30px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#check {
+    display: none;
+}
+
+label #open,
+label #cancel {
+    display: none;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    margin-right: 20px; 
+}
+
+@media (max-width: 944px) {
+    img #logo{
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+
+    #title{
+        font-size: 15px;
+    }
+    .whole img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    label #open{
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 95%;
+        height: 440%;
+        background-color: rgba(0, 0, 0, 0.788);
+        backdrop-filter: blur(10px);
+        top: 40px;
+        left: -200%;
+        display: flex;
+        flex-direction: column;  
+        align-items: center; 
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    
+
+    #check:checked ~ ul {
+        left: 0;
+        border-radius: 20px;
+    }
+
+    #check:checked ~ label #open {
+        display: none;
+    }
+
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+}
+
+@media (max-width: 580px) {
+    .whole{
+        margin: 10px;
+
+    }
+
+    #title{
+        font-size: 14px;
+        position: relative;
+        bottom: 5px;
+        left: -1rem;
+    }
+    .whole img{
+        width: 32px;
+        height: 32px;
+        position: relative;
+        left: -1rem;
+    }
+    label #open,
+    label #cancel {
+    font-size: 24px;
+}
+nav ul {
+    position: fixed;
+    width: 90%;
+    height: 740%;
+    background-color: rgba(0, 0, 0, 0.788);
+    backdrop-filter: blur(10px);
+    top: 30px;
+    left: -200%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+
+#check:checked ~ ul {
+    left: 0;
+    border-radius: 20px;
+}
+
+#check:checked ~ label #open {
+    display: none;
+}
+
+#check:checked ~ label #cancel {
+    display: block;
+}
+
+article img#RisingDesk{
+    width: 90%;
+}
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+    color: white;
+    margin-right: 3rem;
+}
+
+nav a#shop{
+    color: rgb(22, 22, 22);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    text-decoration: underline;
+    color: rgb(56, 56, 56);
+}
+
+nav a:visited {
+    text-decoration: underline;
+}

@@ -27,6 +27,32 @@ body {
     z-index: 100;
 }
 
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+#search-input {
+    border-radius: 20px;
+    border: solid;
+    background-color: rgba(0, 0, 0, 0.107);
+    color: #b1b1b1;
+    font-size: 15px;
+    height: 30px;
+    padding-right: 90px;
+    margin-left: 220px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 470px; /* Adjust the left position as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 18px; /* Adjust the icon size as needed */
+    color: #888; /* Adjust the icon color as needed */
+}
+
 #check {
     display: none;
 }
@@ -40,7 +66,7 @@ label #cancel {
     margin-right: 20px; 
 }
 
-@media (max-width: 944px) {
+@media (max-width: 1260px) {
     img #logo{
         left: 6%;
         top: 20px;
@@ -58,7 +84,7 @@ label #cancel {
     label #open{
         display: block;
     }
-    nav ul {
+    nav#links ul {
         position: fixed;
         width: 95%;
         height: 440%;
@@ -73,7 +99,7 @@ label #cancel {
         transition: all .5s;
     }
 
-    nav ul li a {
+    nav#links ul li a {
         display: block;
         margin: 10px;
         text-decoration: none;
@@ -119,7 +145,7 @@ label #cancel {
     label #cancel {
     font-size: 24px;
 }
-nav ul {
+nav#links ul {
     position: fixed;
     width: 90%;
     height: 740%;
@@ -134,7 +160,7 @@ nav ul {
     transition: all .5s;
 }
 
-nav ul li a {
+nav#links ul li a {
     display: block;
     margin: 10px;
     text-decoration: none;
@@ -142,7 +168,6 @@ nav ul li a {
     font-size: 17px;
     line-height: 20px;
 }
-
 
 #check:checked ~ ul {
     left: 0;
@@ -162,38 +187,42 @@ article img#RisingDesk{
 }
 }
 
-nav {
+nav#links {
     position: relative;
     display: flex;
     align-items: center;
     margin-left: auto;
 }
 
-nav ul {
+nav#links ul {
     display: flex;
     list-style: none;
 }
 
-nav a {
+nav#links a {
     font-family: 'Poppins', serif;
     text-decoration: none;
     color: white;
     margin-right: 3rem;
 }
 
-nav a#shop{
-    color: rgb(22, 22, 22);
+nav#links a#shop{
+    color: rgb(168, 168, 168);
 }
 
-nav a:hover {
+nav#links a:hover {
     text-decoration: underline;
 }
 
-nav a:active {
+nav#links a:active {
     text-decoration: underline;
     color: rgb(56, 56, 56);
 }
 
-nav a:visited {
+nav#links a:visited {
     text-decoration: underline;
+}
+
+@media (max-width: 880px){
+    
 }

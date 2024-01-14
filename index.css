@@ -1,6 +1,6 @@
 body {
     background-color: rgb(255, 255, 249);
-    margin: 0;
+    margin: 0px;
 }
 #title {
     color: rgb(255, 255, 255);
@@ -58,7 +58,7 @@ label #cancel {
     label #open{
         display: block;
     }
-    nav ul {
+    nav#links ul {
         position: fixed;
         width: 95%;
         height: 440%;
@@ -73,7 +73,7 @@ label #cancel {
         transition: all .5s;
     }
 
-    nav ul li a {
+    nav#links ul li a {
         display: block;
         margin: 10px;
         text-decoration: none;
@@ -162,19 +162,19 @@ article img#RisingDesk{
 }
 }
 
-nav {
+nav#links {
     position: relative;
     display: flex;
     align-items: center;
     margin-left: auto;
 }
 
-nav ul {
+nav#links ul {
     display: flex;
     list-style: none;
 }
 
-nav a {
+nav#links a {
     font-family: 'Poppins', serif;
     text-decoration: none;
     color: white;
@@ -182,19 +182,19 @@ nav a {
 }
 
 nav a#home{
-    color: rgb(22, 22, 22);
+    color: rgb(168, 168, 168);
 }
 
-nav a:hover {
+nav#links a:hover {
     text-decoration: underline;
 }
 
-nav a:active {
+nav#links a:active {
     text-decoration: underline;
     color: rgb(56, 56, 56);
 }
 
-nav a:visited {
+nav#links a:visited {
     text-decoration: underline;
 }
 
@@ -502,3 +502,165 @@ div.Gallery img {
     100% {margin-left: -1884px;}
   }
 
+  @media (max-width:615px){
+    #slideshow {
+        height: 200px;
+        width: 50%;
+        margin: 20px auto;
+      }
+      
+      .slidegroup {
+        flex-direction: column;
+        align-items: center;
+        width: 2912px;
+        animation: slide 10s ease infinite;
+        
+      }
+      
+      .slide img{
+        float: left;
+        width: 10%;
+        
+      }
+      
+      @keyframes slide {
+        20% {margin-left: 2660px;}
+        40% {margin-left: 2020px;}
+        60% {margin-left: 1410px;}
+        80% {margin-left: 860px;}
+        100% {margin-left: 29   0px;}
+}
+}
+
+@media (max-width:400px){
+    #slideshow {
+        height: 200px;
+        width: 70%;
+        margin: 20px auto;
+      }
+      
+      .slidegroup {
+        flex-direction: column;
+        align-items: center;
+        width: 2912px;
+        animation: slide 10s ease infinite;
+        
+      }
+      
+      .slide img{
+        float: left;
+        width: 9%;
+        
+      }
+      
+      @keyframes slide {
+        20% {margin-left: 2660px;}
+        40% {margin-left: 2120px;}
+        60% {margin-left: 1590px;}
+        80% {margin-left: 1060px;}
+        100% {margin-left: 530px;}
+}
+}
+
+footer.footer{
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+}
+
+#WholeLast{
+    justify-content: center;
+}
+
+div#LogoF{
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+} 
+
+#LogoF #titleF{
+    color: rgb(255, 255, 255);
+    font-family: 'Diphylleia', serif;
+    font-size: 20px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.Last{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.CompanyF{
+    margin-right: 100px;
+}
+
+.CompanyF h1{
+    font-size: 15px;
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+    color: white;
+}
+
+nav.LinkF a.LinkF{
+    font-size: 12px;
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+    color: white;
+    display: block;    
+}
+
+nav.LinkF a.LinkF:hover{
+    text-decoration: underline;
+}
+
+nav.Social a.Social{
+    font-size: 25px;
+    color: rgb(176, 176, 176);
+    margin-right: 1rem;
+}
+
+.CopyrightF h1{
+    font-size: 12px;
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10;
+}
+
+@media (max-width: 853px){
+    .Last{
+        margin-left: 300px;
+    }
+    #LogoF #titleF{
+        font-size:14px;
+    }
+
+}
+
+@media (max-width: 600px){
+    div.Last{
+        margin-left: 100px;
+    }
+
+    div#LogoF{
+        margin: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    a.Social i{
+        height: 40px;
+    }   
+}
+
+@media(max-width: 430px) {
+    .Last{
+        display: block;
+    }
+
+    .CompanyF{
+        height: 100px;
+    }
+}

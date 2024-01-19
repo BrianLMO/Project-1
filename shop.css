@@ -30,7 +30,7 @@ body {
 .search-container {
     position: relative;
     display: inline-block;
-    margin: auto;
+    margin: auto 0; 
 }
 
 #search-input {
@@ -41,19 +41,72 @@ body {
     font-size: 15px;
     height: 30px;
     padding-right: 90px;
-    margin-left: 220px;
+    margin-left: 90px;
+    
 }
 
 .fa-magnifying-glass {
     position: absolute;
-    left: 470px; /* Adjust the left position as needed */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Center vertically */
-    font-size: 18px; /* Adjust the icon size as needed */
-    color: #888; /* Adjust the icon color as needed */
+    left: 340px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 18px; 
+    color: #888;
+}
+
+@media (max-width: 730px){
+    .search-container{
+        position: relative;
+        left:-100px;
+    }
+
+    #search-input{
+        margin-left: 90px;
+        padding-right: 0px;
+    }
+    
+    .fa-magnifying-glass {
+        left: 250px;
+    }
+    
+}
+
+@media (max-width: 630px){
+    .search-container{
+        left:30px;
+    }
+
+    #search-input{
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .fa-magnifying-glass {
+        left: 150px;
+    }
+}
+
+@media (max-width: 522px){
+    #title{
+        display: none;
+    }
+
+    .search-container{
+        left:-10px;
+    }
+
+    #search-input{
+        margin-left: 0px;
+        padding-right: 20px;
+    }
+    
+    .fa-magnifying-glass {
+        left: 170px;
+    }
 }
 
 #check {
+    padding: 60px;
     display: none;
 }
 
@@ -207,8 +260,9 @@ nav#links a {
 }
 
 nav#links a#shop{
-    color: rgb(168, 168, 168);
-}
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-shadow: 0 0 8px white;}
 
 nav#links a:hover {
     text-decoration: underline;
@@ -223,6 +277,110 @@ nav#links a:visited {
     text-decoration: underline;
 }
 
-@media (max-width: 880px){
-    
+
+
+.first{
+    display: inline-block;
 }
+
+#dpdown{
+    float: left;
+    overflow: hidden;
+}
+
+.Chairs{
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.689);
+    color: white;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+ }
+
+ @media (max-width: 580px){
+    .Chairs{
+        margin-left: 10px;  
+     }
+ }
+
+ .droplist1{
+    margin-left: 30px;
+    text-decoration: none;
+    display: none; 
+    background-color: rgba(57, 57, 57, 0.052);
+    backdrop-filter: blur(10px);
+    min-width: 50px; 
+    padding-right: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    position: fixed;
+    top:163px;
+    z-index: 1;
+    
+ }
+
+#dpdown:hover .droplist1{
+     display: block;
+     border-bottom: 0px;
+ }
+
+.droplist1 a{
+    color: rgb(28, 28, 28);
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+    line-height: 2rem;
+
+ }
+.droplist1 a:hover{
+     background-color: rgb(224, 224, 224);
+     color: black;
+     min-width: 50px; 
+     font-size: 22px;
+ }
+
+ /* DESKS */
+ .desks{
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.689);
+    color: white;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+ }
+
+ @media (max-width: 580px){
+    .desks{
+        margin-left: 10px;  
+     }
+ }
+
+ /* Tables */
+ .tables{
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.689);
+    color: white;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+ }
+
+ @media (max-width: 580px){
+    .tables{
+        margin-left: 10px;  
+     }
+ }
+
+ hr{
+    margin: 10px 40px;
+    border-width: 1.5px;
+ }

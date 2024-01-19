@@ -34,6 +34,7 @@
             </div>
 
             <div class="therest">   
+                <input type="email" id="Email" placeholder="Email address" required>
                 <input type="text" id="Companyname" placeholder="Company name">
                 <input type="textarea" id="msg" placeholder="Message">
             </div>
@@ -41,7 +42,7 @@
 
         <div class="InnerLower">
             <div class="checkbox">
-                <input type="checkbox" id="checkbox"> <p>I agree to the Terms of Use, Privacy Notice and Cookie Notice.</p>
+                <input type="checkbox" id="checkbox"> <p class="Terms">I agree to the Terms of Use, Privacy Notice and Cookie Notice.</p>
             </div>
             <button>Send message</button>
         </div>
@@ -58,6 +59,7 @@
         <h1>Hotline Number:</h1>
         <p>1-800-555-1234</p>
     </div>
+    
 
     <footer class="footer">
         <br>
@@ -92,11 +94,39 @@
                     </nav>
                 </div>
         </div>
+        
     
         <span class="CopyrightF">
             <h1>Version 1.0.0 © Standing Desk Company 2024 </h1>
         </span>
         
     </footer>
+
+    <script>
+        
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            function handleSubmit() {
+                var firstName = document.getElementById('firstname').value;
+                var lastName = document.getElementById('lastname').value;
+                var email = document.getElementById('Email').value;
+                var companyName = document.getElementById('Companyname').value;
+                var message = document.getElementById('msg').value;
+    
+                var alertMessage = 'Contact Details:\n\n';
+                alertMessage += 'First Name: ' + firstName + '\n';
+                alertMessage += 'Last Name: ' + lastName + '\n';
+                alertMessage += 'Email: ' + email + '\n';
+                alertMessage += 'Company Name: ' + companyName + '\n';
+                alertMessage += 'Message: ' + message;
+    
+                alert(alertMessage);
+            }
+    
+            var submitButton = document.querySelector('button');
+            submitButton.addEventListener('click', handleSubmit);
+        });
+    </script>
+    
 </body>
 </html>

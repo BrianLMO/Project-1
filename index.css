@@ -182,7 +182,9 @@ nav#links a {
 }
 
 nav a#home{
-    color: rgb(168, 168, 168);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-shadow: 0 0 8px white;
 }
 
 nav#links a:hover {
@@ -232,9 +234,8 @@ nav#links a:visited {
     box-shadow: 10px 10px 30px;
     width: 500px;
     padding: 20px;
-    background-color: black;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: rgba(43, 43, 43, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
 }
@@ -265,9 +266,8 @@ p.text1{
     width: 500px;
     display: flex;
     padding: 20px;
-    background-color: black;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: rgba(43, 43, 43, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
 }
@@ -302,8 +302,7 @@ p.text2{
     box-shadow: 10px 10px 30px;
     width: 1060px;
     padding: 20px;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: rgba(43, 43, 43, 0.788);
     backdrop-filter: blur(10px);
     border-radius: 30px;
 }
@@ -432,7 +431,7 @@ p.text4{
     
 }
 
-.imgGrid {
+.Grids {
     display: grid;
     max-width: 600px;
     width: 100%;
@@ -448,9 +447,12 @@ div.Gallery img {
 }
 
 @media (max-width: 580px){
+    .Box4{
+        margin: 5px;
+    }
     h1.text4{
         margin:10px;
-        font-size: 35px;
+        font-size: 30px;
     }
     h1.text4 i{
         font-size: 40px;

@@ -18,8 +18,8 @@
     <img id="logo" src="Logo.png" alt="Logo picture" width='50' height='45'>
     <h1 id="title">Standing Desk Company</h1>
     <div class="search-container">
-        <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" id="search-input" placeholder="Search products...">
+        <i class="fa-solid fa-magnifying-glass"></i>    
     </div>
         <nav id="links">
         <input type="checkbox" id="check">
@@ -35,5 +35,60 @@
     </nav>
 </div>
 
+<div class="first">
+    <div id="dpdown">
+        <button class="Chairs">Chairs <i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+        <div class="droplist1">
+            <a href="#armchair">Armchair</a><br>
+            <a href="#deskchair">Desk Chair</a><br>
+            <a href="#recliner">Recliner</a><br>
+            <a href="#dreambed">Dream bed</a>
+        </div>
+    </div>
+
+    <div id="dpdown">
+        <button class="desks">Desks <i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+        <div class="droplist1">
+            <a href="#standingdesk">Standing Desk</a><br>
+            <a href="#lecterndesk">Lectern Desk</a><br>
+            <a href="#gamingdesk">Gaming Desk</a><br>
+            <a href="#Workstation">Workstation Desk</a>
+        </div>
+    </div>
+
+    <div id="dpdown">
+        <button class="tables">Tables <i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+        <div class="droplist1">
+            <a href="#diningtable   ">Dining Table</a><br>
+            <a href="#consoletable">Console Table</a><br>
+            <a href="#drumtable">Drum Table</a><br>
+            <a href="#chesstable">Chess Table</a>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="Chairs  ">
+    <div class="Grids"><img src="Grid1.jpg" alt="Customized desin 1"></div>
+    <div class="Grids"><img src="Grid2.jpg" alt="Customized desin 2"></div>
+    <div class="Grids"><img src="Grid3.jpg" alt="Customized desin 3"></div>        <div class="Grids"><img src="Grid4.jpg" alt="Customized desin 4"></div>
+</div>
+
+<script>
+    const searchInput = document.getElementById("search-input");
+    const productContainer = document.getElementById("product-container");
+    const products = productContainer.querySelectorAll(".product");
+    
+    searchInput.addEventListener("keyup", function() {
+    const searchTerm = this.value.toLowerCase();
+      
+    products.forEach(function(product) {
+    const productName = product.dataset.productName.toLowerCase();
+    const isMatch = productName.includes(searchTerm);
+
+    product.style.display = isMatch ? "block" : "none";
+  });
+});
+  </script>
 </body>
 </html>

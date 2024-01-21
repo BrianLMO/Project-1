@@ -13,7 +13,7 @@
     <title>Standing Desk Company</title>
 </head>
 <body>
-
+<div id="top"></div>
 <div class="whole">
     <img id="logo" src="Logo.png" alt="Logo picture" width='50' height='45'>
     <h1 id="title">Standing Desk Company</h1>
@@ -30,7 +30,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a id="shop" href="shop.html">Shop</a></li>
-            <li><a href="SO">Special Offers</a></li>
+            <li><a href="HB">Health benefit</a></li>
         </ul>
     </nav>
 </div>
@@ -41,8 +41,7 @@
         <div class="droplist1">
             <a href="#armchair">Armchair</a><br>
             <a href="#deskchair">Desk Chair</a><br>
-            <a href="#recliner">Recliner</a><br>
-            <a href="#dreambed">Dream bed</a>
+            <a href="#recliner">Recliner</a>
         </div>
     </div>
 
@@ -50,45 +49,584 @@
         <button class="desks">Desks <i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
         <div class="droplist1">
             <a href="#standingdesk">Standing Desk</a><br>
-            <a href="#lecterndesk">Lectern Desk</a><br>
             <a href="#gamingdesk">Gaming Desk</a><br>
             <a href="#Workstation">Workstation Desk</a>
         </div>
     </div>
 
     <div id="dpdown">
-        <button class="tables">Tables <i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+        <button class="Spo">Special Offer <i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
         <div class="droplist1">
-            <a href="#diningtable   ">Dining Table</a><br>
-            <a href="#consoletable">Console Table</a><br>
-            <a href="#drumtable">Drum Table</a><br>
-            <a href="#chesstable">Chess Table</a>
+            <a href="#RD">Rising Desk</a><br>
+            <a href="#SD">Standing Desk</a>
         </div>
     </div>
 </div>
 <hr>
 
-<div class="Chairs  ">
-    <div class="Grids"><img src="Grid1.jpg" alt="Customized desin 1"></div>
-    <div class="Grids"><img src="Grid2.jpg" alt="Customized desin 2"></div>
-    <div class="Grids"><img src="Grid3.jpg" alt="Customized desin 3"></div>        <div class="Grids"><img src="Grid4.jpg" alt="Customized desin 4"></div>
+<button class="basket-button" onclick="showCartDetails()"><i class="fa-brands fa-opencart"></i><span id="cartCount"></span></button>
+
+<div class="second">
+    <div id="armchair">
+        <h1>Armchair</h1>
+        <div class="chairgrid1">
+            <div class="Grids">
+                <img src="Arm1.jpg" alt="Armchair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Potato">          
+                            <label id="Potato" for="itemname" >Potato</label><br>
+                            <label for="Price" >Price $539.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Great mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Potato', 539.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="Grids">
+                <img src="Arm2.jpg" alt="Armchair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Throne">          
+                            <label id="Throne" for="itemname" >Throne</label><br>
+                            <label for="Price" >Price $879.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Spacious seat</li><br>
+                                    <li>Great mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Throne', 879.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="Grids">
+                <img src="Arm3.jpg" alt="Armchair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Wheat">          
+                            <label id="Wheat" for="itemname" >Wheat</label><br>
+                            <label for="Price" >Price $636.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Free shipping</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Great mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Wheat', 636.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="chairgrid2">        
+            <div class="Grids">
+                <img src="Arm4.jpg" alt="Armchair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Mash">          
+                            <label id="Mash" for="itemname" >Mash</label><br>
+                            <label for="Price" >Price $549.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Great mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Mash', 549.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="Grids">
+                <img src="Arm5.jpg" alt="Armchair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Big">          
+                            <label id="Big" for="itemname" >Big Throne</label><br>
+                            <label for="Price" >Price $929.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Double spacious</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Great mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Big', 929.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="Grids">
+                <img src="Arm6.jpg" alt="Armchair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Go">          
+                            <label id="Go" for="itemname" >Go</label><br>
+                            <label for="Price" >Price $349.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Spacious</li><br>
+                                    <li>Light weight</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Great mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Go', 349.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <hr>    
+    <div id="deskchair">
+        <h1>Desk Chair</h1>
+        <div class="chairgrid1">
+            <div class="dGrids">
+                <img src="DC1.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Victory White">          
+                            <label id="Victory" for="itemname" >Victory White</label><br>
+                            <label for="Price" >Price $323.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Waist support</li><br>
+                                    <li>Light weight</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Victory', 323.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="dGrids">
+                <img src="DC2.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Cranial">          
+                            <label id="Cranial" for="itemname" >Cranial</label><br>
+                            <label for="Price" >Price $234.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Cranial', 234.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="dGrids">
+                <img src="DC3.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Kratos">          
+                            <label id="Kratos" for="itemname" >Kratos</label><br>
+                            <label for="Price" >Price $756.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Light weight</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Cranial', 756.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="chairgrid2">        
+            <div class="dGrids">
+                <img src="DC4.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Modern">          
+                            <label id="Modern" for="itemname" >Modern</label><br>
+                            <label for="Price" >Price $606.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Fabric texture</li><br>
+                                    <li>Great comfort</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Modern', 606.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="dGrids">
+                <img src="DC5.jpeg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Extra">          
+                            <label id="Extra" for="itemname" >Extra</label><br>
+                            <label for="Price" >Price $886.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Spacious handrest </li><br>
+                                    <li>Extra comfort</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Extra', 886.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="dGrids">
+                <img src="DC6.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Sonic">          
+                            <label id="Sonic" for="itemname" >Sonic</label><br>
+                            <label for="Price" >Price $766.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Extra toughness</li><br>
+                                    <li>Flexy back</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Sonic', 766.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr> 
+    <div id="recliner">
+        <h1>Recliner Chair</h1>
+        <div class="chairgrid1">
+            <div class="rGrids">
+                <img src="Re1.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="AirSeat">          
+                            <label id="AirSeat" for="itemname" >AirSeat</label><br>
+                            <label for="Price" >Price $676.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Flexy back</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('AirSeat', 676.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="dGrids">
+                <img src="Re2.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Rewind">          
+                            <label id="Rewind" for="itemname" >Rewind</label><br>
+                            <label for="Price" >Price $674.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Extra toughness</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Rewind', 674.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="dGrids">
+                <img src="Re3.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Rewind">          
+                            <label id="Rewind" for="itemname" >Rewind Black</label><br>
+                            <label for="Price" >Price $766.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Extra toughness</li><br>
+                                    <li>Flexy back</li><br>
+                                    <li>Easy mobility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Rewind', 766.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="chairgrid2">        
+            <div class="rGrids">
+                <img src="Re4.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Cine">          
+                            <label id="Cine" for="itemname" >Cine</label><br>
+                            <label for="Price" >Price $675.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Spacious</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Extra toughness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Cine', 675.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="rGrids">
+                <img src="Re5.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Cine">          
+                            <label id="Cine" for="itemname" >CineWhite </label><br>
+                            <label for="Price" >Price $766.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Spacious</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Extra toughness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('CineWhite', 766.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+            <div class="rGrids">
+                <img src="Re6.jpg" alt="Desk chair">
+                <div class="details">
+                    <div class="tobeinline">
+                        <form action="" name="Classic">          
+                            <label id="Classic" for="itemname" >Classic Junior</label><br>
+                            <label for="Price" >Price $786.99</label>
+                        </form>
+                        <div id="itemdpdown">
+                            <button class="HB">Details<i class="fa-solid fa-caret-down" style="color: #3d3d3d;"></i></button>
+                            <div class="itemdroplist1">
+                                <ul>
+                                    <li>Free delivery</li><br>
+                                    <li>Spacious</li><br>
+                                    <li>Less back pain</li><br>
+                                    <li>Extra toughness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button class="bt1" onclick="increaseCount('Classic', 786.99, 1);">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<script>
-    const searchInput = document.getElementById("search-input");
-    const productContainer = document.getElementById("product-container");
-    const products = productContainer.querySelectorAll(".product");
-    
-    searchInput.addEventListener("keyup", function() {
-    const searchTerm = this.value.toLowerCase();
-      
-    products.forEach(function(product) {
-    const productName = product.dataset.productName.toLowerCase();
-    const isMatch = productName.includes(searchTerm);
+<footer class="footer">
+    <button><a href="#top">Back to top</a></button>
+    <br>
+    <div id="WholeLast">
+        <div id="LogoF">
+            <img id="LogoF" src="Logo.png" alt="Logo picture" width='50' height='45'>
+            <h1 id="titleF">Standing Desk Company</h1>
+        </div>
 
-    product.style.display = isMatch ? "block" : "none";
-  });
+        <div class="Last"> 
+            <div class="CompanyF">
+                <h1>Company</h1>
+                <nav class="LinkF">
+                    <a class="LinkF" href="contact.html">Contact form</a>
+                    <a class="LinkF" href="about.html">About us</a>
+                </nav>
+            </div>
+
+            <div class="CompanyF">
+                <h1>Support</h1>
+                <nav class="LinkF">
+                    <a class="LinkF" href="FAQ.html">FAQ</a>
+                    <a class="LinkF" href="Feedback.html">Feedback</a>
+                </nav>
+            </div>
+
+            <div class="CompanyF">
+                <nav class="Social">
+                    <a class="Social" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="Social" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="Social" href="https://telegram.org"><i class="fa-brands fa-telegram"></i></a>
+                </nav>
+            </div>
+    </div>
+
+    <span class="CopyrightF">
+        <h1>Version 1.0.0 © Standing Desk Company 2024 </h1>
+    </span>
+    
+</footer>
+<script>
+var cart = [];
+
+function increaseCount(itemName, itemPrice) {
+    var existingItem = cart.find(item => item.name === itemName);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ name: itemName, price: itemPrice, quantity: 1 });
+    }
+
+    updateCountDisplay();
+}
+
+function showCartDetails() {
+    var totalItems = 0;
+    var totalPrice = 0;
+    var alertMessage = "Items in Cart:\n";
+
+    cart.forEach(item => {
+        totalItems += item.quantity;
+        totalPrice += item.price * item.quantity;
+        alertMessage += item.name + ": " + item.quantity + " x $" + item.price.toFixed(2) + "\n";
+    });
+
+    alert(alertMessage + "\nTotal items: " + totalItems + "\nTotal price: $" + totalPrice.toFixed(2));
+}
+
+function updateCountDisplay() {
+    var countDisplay = document.getElementById('cartCount');
+    var totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+    
+    countDisplay.textContent = totalCount > 0 ? totalCount : '';
+}
+document.addEventListener('DOMContentLoaded', function () {
+    // Add an event listener to the search input
+    var searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', filterProducts);
 });
-  </script>
+
+function filterProducts() {
+    var searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+    var productContainers = document.querySelectorAll('.Grids, .dGrids, .rGrids');
+
+    productContainers.forEach(function (container) {
+        var productName = container.querySelector('label[for="itemname"]').innerText.toLowerCase();
+
+        if (productName.includes(searchTerm)) {
+            container.style.display = 'block';
+        } else {
+            container.style.display = 'none';
+        }
+    });
+}
+</script>
 </body>
 </html>

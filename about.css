@@ -16,7 +16,7 @@ body{
 #title {
     color: rgb(255, 255, 255);
     font-family: 'Diphylleia', serif;
-    font-size: 20px;
+    font-size: 24px;
     position: relative;
     margin-right: 20px;  
 }
@@ -58,6 +58,22 @@ body{
         left: -1rem;
     }
 }
+nav.cancel a{
+    display: flex;
+    float: right;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Poppins', serif;
+    color: black;
+}
+
+nav.cancel a:hover{
+    color: rgb(126, 126, 126);
+}
+
+nav.cancel a:active{
+    color: rgb(210, 210, 210);
+}
 
 .Secwhole{
     margin: 40px;
@@ -72,6 +88,17 @@ body{
 .Secwhole h3{
     font-size: 30px;
 }
+      
+/*For Feedback*/
+.Secwhole h4{
+    font-family: 'Poppins', serif;
+    font-size: 23px;
+}
+.Secwhole li{
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+}
+
 .Secwhole p{
     font-family: 'Poppins', serif;
     font-size: 20px;
@@ -81,17 +108,18 @@ body{
     font-size: 20px;
 }
 
-.ThirdWhole {
+.Forvid {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content horizontally */
     text-align: center;
-    margin-bottom: 20px; /* Add margin to create space between the video and the footer */
+    margin-bottom: 30px;
 }
 
 
-.Forvid object{
+object video{
     border-radius: 30px;
+    width: 544px;
+    height: auto;
 }
 
 footer.footer{
@@ -163,16 +191,21 @@ nav.Social a.Social{
 }
 
 @media (max-width: 853px){
+    object video{
+        max-width: 433px;
+    }    
     .Last{
         margin-left: 300px;
     }
     #LogoF #titleF{
         font-size:14px;
     }
-
 }
 
 @media (max-width: 600px){
+    object video{
+        max-width: 322px;
+    } 
     div.Last{
         margin-left: 100px;
     }
@@ -188,11 +221,19 @@ nav.Social a.Social{
 }
 
 @media(max-width: 430px) {
+    object video{
+        max-width: 271px;
+    }
     .Last{
         display: block;
     }
-
     .CompanyF{
         height: 100px;
     }
+}
+
+
+/*FAQ CSS + Feedback*/
+#FAQContact, #FeedbackContact {
+    text-decoration: none;
 }

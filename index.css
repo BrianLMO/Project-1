@@ -41,7 +41,7 @@ label #cancel {
 }
 
 @media (max-width: 944px) {
-    img #logo{
+    img#logo{
         left: 6%;
         top: 20px;
         width: 130px;
@@ -216,6 +216,44 @@ nav#links a:visited {
 #RisingDesk{
     width: 500px;
 }
+
+#dpdown{
+    float: left;
+    overflow: hidden;
+}
+
+.Chairs{
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.689);
+    color: white;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+ }
+
+ @media (max-width: 580px){
+    .Chairs{
+        margin-left: 10px;  
+     }
+ }
+
+ .droplist1{
+    margin-left: 30px;
+    text-decoration: none;
+    display: none; 
+    background-color: rgba(0, 0, 0, 0.13);
+    backdrop-filter: blur(10px);
+    min-width: 50px; 
+    padding-right: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    z-index: 90;
+ }
 
 /*Second Page*/
 .SecWhole{
@@ -579,7 +617,7 @@ div#LogoF{
     margin-left: auto;
 } 
 
-#LogoF #titleF{
+#titleF{
     color: rgb(255, 255, 255);
     font-family: 'Diphylleia', serif;
     font-size: 20px;
@@ -636,7 +674,7 @@ nav.Social a.Social{
     .Last{
         margin-left: 300px;
     }
-    #LogoF #titleF{
+    #titleF{
         font-size:14px;
     }
 
@@ -665,4 +703,16 @@ nav.Social a.Social{
     .CompanyF{
         height: 100px;
     }
+}
+
+/*For Health Benefit Page*/
+nav #HB{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-shadow: 0 0 8px white;
+}
+#minisub{
+    color: white;
+    margin: 20px;
+    font-family: 'Poppins', serif;
 }

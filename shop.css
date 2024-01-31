@@ -398,6 +398,16 @@ nav#links a:visited {
      }
  }
 
+.intro{
+    background-color: #b1b1b1;
+    border-radius: 20px;
+    font-family: 'Poppins', serif;
+    line-height: 1.5rem;
+    margin: 20px 30px;
+    padding: 20px;
+    box-shadow: 5px 5px 16px rgb(0, 0, 0);
+}
+
 
  /*Armchairs*/
  .tobeinline{

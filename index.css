@@ -10,7 +10,7 @@ body {
     margin-right: 20px;  
 }
 
-#logo {
+#logo{
     margin-left: 30px;
 }
 
@@ -42,9 +42,7 @@ label #cancel {
 
 @media (max-width: 944px) {
     img#logo{
-        left: 6%;
-        top: 20px;
-        width: 130px;
+        width: auto;
     }
 
     #title{
@@ -143,7 +141,6 @@ nav ul li a {
     line-height: 20px;
 }
 
-
 #check:checked ~ ul {
     left: 0;
     border-radius: 20px;
@@ -157,7 +154,7 @@ nav ul li a {
     display: block;
 }
 
-article img#RisingDesk{
+img#RisingDesk{
     width: 90%;
 }
 }
